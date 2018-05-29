@@ -1,20 +1,27 @@
-# Memory Game Project
+# Matching Game Project
 
-## Table of Contents
+Matching games are games that require players to match similar elements. As the name implies, participants need to find a match for a word, picture, or card. For example.
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+## Overview
 
-## Instructions
+I use HTML, CSS, JQuery to create simple Matching Game.
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Getting Started
 
-To get started, open `js/app.js` and start building out the app's functionality
+To run game you can download and run ```index.html``` file, or just click [here]()
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+### Instructions
 
-## Contributing
+1. Try to remember the symbols!
+2. If the symbols match, the cards will stay open. Otherwise, they will close after 1.5 seconds.
+3. When all cards are matched, you win the game!
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+	Note: 
+	0-8 moves: 3 star;
+	9-20 moves: 2 star;
+	21-40 moves: 1 star;
+	40 and over: 0 star; 
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+### Resources
+
+[Udacity starter code](https://github.com/udacity/fend-project-memory-game)

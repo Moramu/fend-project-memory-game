@@ -21,6 +21,7 @@ body {
     font-family: 'Coda', cursive;
 }
 
+
 .container {
     display: flex;
     justify-content: center;
@@ -63,10 +64,12 @@ h1 {
     justify-content: center;
     align-items: center;
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    transition: transform 1s;
+    transform-style: preserve-3d;
 }
 
 .deck .card.open {
-    transform: rotateY(0);
+    transform: rotateY(0deg);
     background: #02b3e4;
     cursor: default;
 }
@@ -106,4 +109,96 @@ h1 {
 .score-panel .restart {
     float: right;
     cursor: pointer;
+}
+
+.score-panel #chronotime {
+    float: right;
+    margin-right: 20px;
+}
+
+.win_stars {
+    white-space:nowrap;
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex;
+    margin: 0 5px 0 0;
+}
+
+/** Popup **/
+
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+.popup-inner {
+    max-width:300px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+    text-align: center;
+}
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+@media screen and (max-width: 450px) {
+    .score-panel {
+        font-size: 16px;
+        width: 100%;
+        margin-left: 10%;
+    }
+    .header {
+        font-size: 20px;
+    }
+    .deck {
+        width: 312px;
+        min-height: 150px;
+    }
+    .deck .card {
+        height: 70px;
+        width: 56px;
+        margin: 3px;
+    }
+    .restart {
+        display: inline-block;
+        float:none;
+        margin-right:10%;
+    }
+    .stars {
+        margin-left:10%;
+    }
 }
