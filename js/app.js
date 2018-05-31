@@ -68,9 +68,6 @@ function userRaiting()  {
 	if (moves==20) {
 		$(".star2").children().first().addClass('fa-star-o').removeClass('fa-star');
 	}
-	if (moves==40) {
-		$(".star1").children().first().addClass('fa-star-o').removeClass('fa-star');	
-	}
 }
 
 function gameWin() {
