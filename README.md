@@ -19,7 +19,8 @@ To run game you can download and run ```index.html``` file, or just click [here]
 	### Note: 
 	- 0-8 moves: 3 star;
 	- 9-20 moves: 2 star;
-
+	- 20 and more: 1 star;
+	
 ## Resources
 
 [Udacity starter code](https://github.com/udacity/fend-project-memory-game)
